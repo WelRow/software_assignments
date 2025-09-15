@@ -82,7 +82,7 @@ class SandwichMachine:
 
         return self.deposit
 
-'''
+
     def transaction_result(self, coins, cost):
         """Return True when the payment is accepted, or False if money is insufficient.
            Hint: use the output of process_coins() function for cost input"""
@@ -132,7 +132,7 @@ class SandwichMachine:
                     
 
 ### Make an instance of SandwichMachine class and write the rest of the codes ###
-
+'''
 sm1 = SandwichMachine(resources)
 sm1.run()
 '''
