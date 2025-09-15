@@ -45,7 +45,7 @@ class SandwichMachine:
         
         self.machine_resources = machine_resources
         self.isOn = True
-'''
+
     def check_resources(self, ingredients):
         """Returns True when order can be made, False if ingredients are insufficient."""
         # Assuming ingredients = size of sandwhich cus it doesnt make any sense if it isnt
@@ -82,7 +82,7 @@ class SandwichMachine:
 
         return self.deposit
 
-
+'''
     def transaction_result(self, coins, cost):
         """Return True when the payment is accepted, or False if money is insufficient.
            Hint: use the output of process_coins() function for cost input"""
