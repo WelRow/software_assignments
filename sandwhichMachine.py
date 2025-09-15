@@ -132,7 +132,6 @@ class SandwichMachine:
                     
 
 ### Make an instance of SandwichMachine class and write the rest of the codes ###
-'''
+
 sm1 = SandwichMachine(resources)
 sm1.run()
-'''
