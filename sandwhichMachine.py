@@ -1,6 +1,6 @@
 ### Data ###
 
-'''
+
 recipes = {
     "small": {
         "ingredients": {
@@ -33,7 +33,7 @@ resources = {
     "ham": 18,  ## slice
     "cheese": 24,  ## ounces
 }
-
+'''
 
 ### Complete functions ###
 
