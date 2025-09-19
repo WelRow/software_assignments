@@ -13,11 +13,16 @@ class BankAccount():
     def withdraw(self, amount):
         if (self.currentBalance < self.minimumBalance):
             print("You cannot withdraw as your current balance below you're account minimum!")
+            return
+        print(f"You withdraw ${amount}!")
+        self.currentBalance -= amount
     
-    def __str__(self):
+    def printCustomerInformation(self):
         return f"{self.customerName} {self.currentBalance} {BankAccount.bankTitle}"
 
-p1 = BankAccount("Josias Kanyinda", 100000000)
-p2 = BankAccount("Trump", 0)
+if __name__ == "__main__": 
 
-print(p1)
+    p1 = BankAccount("Josias Kanyinda", 100000000)
+    p2 = BankAccount("Trump", 0)
+
+    print(p2.printCustomerInformation())
