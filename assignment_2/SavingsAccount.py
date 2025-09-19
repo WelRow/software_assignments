@@ -7,6 +7,6 @@ class SavingsAccount(BankAccount):
         self.interestRate = interestRate
 
     def apply_interest(self):
-        interestAmount = self.balance * self.interestRate
+        interestAmount = self.currentBalance * self.interestRate
         print(f"Applying interest of ${interestAmount:.2f}")
         self.deposit(interestAmount)

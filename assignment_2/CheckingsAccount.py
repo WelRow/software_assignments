@@ -10,11 +10,11 @@ class CheckingAccount(BankAccount):
     def transfer(self, amount, recipientAccount: BankAccount):
         if amount > self.transferLimit:
             print(f"Transfer failed. Amount exceeds the transfer limit of ${self.transferLimit:.2f}.")
-        elif 0 < amount <= self.balance:
+        elif 0 < amount <= self.currentBalance:
             self.withdraw(amount)
             recipientAccount.deposit(amount)
             print(f"Successfully transferred ${amount:.2f} to {recipientAccount.customerName}.")
-        elif amount > self.balance:
+        elif amount > self.currentBalance:
             print("Transfer failed. Insufficient funds.")
         else:
             print("Transfer amount must be positive.")

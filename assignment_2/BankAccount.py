@@ -20,11 +20,11 @@ class BankAccount():
         self.currentBalance -= amount
     
     def printCustomerInformation(self):
-        return f"{self.customerName} {self.currentBalance} {BankAccount.bankTitle}"
+        print(f"{self.customerName} {self.currentBalance} {BankAccount.bankTitle}")
 
 if __name__ == "__main__": 
 
     p1 = BankAccount("Josias Kanyinda", 100000000)
     p2 = BankAccount("Trump", 0)
 
-    print(p2.printCustomerInformation())
+    p2.printCustomerInformation()
