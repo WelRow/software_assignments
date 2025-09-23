@@ -11,22 +11,22 @@ cashier1 = cashier.Cashier(receipe)
 isOn = True
 
 while isOn:
-    input1 = input("What would you like? (small/ medium/ large/ off/ report): ")
+    userInput = input("What would you like? (small/ medium/ large/ off/ report): ")
 
-    if input1 == "off":
+    if userInput == "off":
         isOn = False
     
-    elif input1 == "report":
+    elif userInput == "report":
         print(f"Bread: {resources['bread']} slice(s)\nHam: {resources['ham']} slice(s)\nCheese: {resources['cheese']} pound(s)")
 
-    elif input1 == "small":
+    elif userInput == "small":
         if sm1.check_resources("small") and cashier1.transaction_result(cashier1.process_coins(), "small"):
             sm1.make_sandwich("small", receipe["small"]["ingredients"])
     
-    elif input1 == "medium":
+    elif userInput == "medium":
         if sm1.check_resources("medium") and cashier1.transaction_result(cashier1.process_coins(), "medium"):
             sm1.make_sandwich("medium", receipe["medium"]["ingredients"])
 
-    elif input1 == "large":
+    elif userInput == "large":
         if sm1.check_resources("large") and cashier1.transaction_result(cashier1.process_coins(), "large"):
             sm1.make_sandwich("large", receipe["large"]["ingredients"])
